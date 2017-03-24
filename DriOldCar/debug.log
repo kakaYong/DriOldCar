@@ -1,0 +1,285 @@
+Internal Server Error: /video/
+Traceback (most recent call last):
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/utils.py", line 65, in __getitem__
+    return self._engines[alias]
+KeyError: 'django'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuetianzhuang/yongli/Projects/DriOldCar/SmallVideo/views.py", line 22, in video_list
+    return render(request, 'SmallVideo/index.html', context)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/loader.py", line 18, in get_template
+    engines = _engine_list(using)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/loader.py", line 72, in _engine_list
+    return engines.all() if using is None else [engines[using]]
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/utils.py", line 89, in all
+    return [self[alias] for alias in self]
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/utils.py", line 89, in <listcomp>
+    return [self[alias] for alias in self]
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/utils.py", line 79, in __getitem__
+    engine_cls = import_string(backend)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/utils/module_loading.py", line 20, in import_string
+    module = import_module(module_path)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+ImportError: No module named 'django.templates'
+"GET /video/ HTTP/1.1" 500 103497
+Internal Server Error: /video/
+Traceback (most recent call last):
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/utils.py", line 65, in __getitem__
+    return self._engines[alias]
+KeyError: 'django'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuetianzhuang/yongli/Projects/DriOldCar/SmallVideo/views.py", line 22, in video_list
+    return render(request, 'SmallVideo/index.html', context)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/loader.py", line 18, in get_template
+    engines = _engine_list(using)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/loader.py", line 72, in _engine_list
+    return engines.all() if using is None else [engines[using]]
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/utils.py", line 89, in all
+    return [self[alias] for alias in self]
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/utils.py", line 89, in <listcomp>
+    return [self[alias] for alias in self]
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/utils.py", line 79, in __getitem__
+    engine_cls = import_string(backend)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/utils/module_loading.py", line 20, in import_string
+    module = import_module(module_path)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+ImportError: No module named 'django.templates'
+"GET /video/ HTTP/1.1" 500 103497
+Internal Server Error: /video/
+Traceback (most recent call last):
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/utils.py", line 65, in __getitem__
+    return self._engines[alias]
+KeyError: 'django'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuetianzhuang/yongli/Projects/DriOldCar/SmallVideo/views.py", line 22, in video_list
+    return render(request, 'SmallVideo/index.html', context)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/loader.py", line 18, in get_template
+    engines = _engine_list(using)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/loader.py", line 72, in _engine_list
+    return engines.all() if using is None else [engines[using]]
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/utils.py", line 89, in all
+    return [self[alias] for alias in self]
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/utils.py", line 89, in <listcomp>
+    return [self[alias] for alias in self]
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/utils.py", line 79, in __getitem__
+    engine_cls = import_string(backend)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/utils/module_loading.py", line 20, in import_string
+    module = import_module(module_path)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+ImportError: No module named 'django.templates'
+"GET /video/ HTTP/1.1" 500 103362
+"GET /video/2 HTTP/1.1" 301 0
+"GET /video/2/ HTTP/1.1" 302 0
+"GET /media/Dymy%E5%89%AF%E6%9C%AC.mp4 HTTP/1.1" 200 3235840
+Internal Server Error: /video/
+Traceback (most recent call last):
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/utils.py", line 65, in __getitem__
+    return self._engines[alias]
+KeyError: 'django'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuetianzhuang/yongli/Projects/DriOldCar/SmallVideo/views.py", line 22, in video_list
+    return render(request, 'SmallVideo/index.html', context)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/loader.py", line 18, in get_template
+    engines = _engine_list(using)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/loader.py", line 72, in _engine_list
+    return engines.all() if using is None else [engines[using]]
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/utils.py", line 89, in all
+    return [self[alias] for alias in self]
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/utils.py", line 89, in <listcomp>
+    return [self[alias] for alias in self]
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/utils.py", line 79, in __getitem__
+    engine_cls = import_string(backend)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/utils/module_loading.py", line 20, in import_string
+    module = import_module(module_path)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+ImportError: No module named 'django.templates'
+"GET /video/ HTTP/1.1" 500 103362
+Internal Server Error: /video/
+Traceback (most recent call last):
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/utils.py", line 65, in __getitem__
+    return self._engines[alias]
+KeyError: 'django'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yuetianzhuang/yongli/Projects/DriOldCar/SmallVideo/views.py", line 17, in video_list
+    index_templ = loader.get_template('SmallVideo/index.html')
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/loader.py", line 18, in get_template
+    engines = _engine_list(using)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/loader.py", line 72, in _engine_list
+    return engines.all() if using is None else [engines[using]]
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/utils.py", line 89, in all
+    return [self[alias] for alias in self]
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/utils.py", line 89, in <listcomp>
+    return [self[alias] for alias in self]
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/template/utils.py", line 79, in __getitem__
+    engine_cls = import_string(backend)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/site-packages/django/utils/module_loading.py", line 20, in import_string
+    module = import_module(module_path)
+  File "/Users/yuetianzhuang/yongli/virenv/djg3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+ImportError: No module named 'django.templates'
+"GET /video/ HTTP/1.1" 500 94247
+"GET /video/ HTTP/1.1" 200 276
+"GET /media/Dymy%E5%89%AF%E6%9C%AC_tlMYM5k.mp4 HTTP/1.1" 200 3227648
+"GET /video/ HTTP/1.1" 200 448
+"GET /video/ HTTP/1.1" 200 405
+Not Found: /media/Dymy副本.mp4 }}
+"GET /media/Dymy%E5%89%AF%E6%9C%AC.mp4%20%7D%7D HTTP/1.1" 404 1836
+"GET /video/ HTTP/1.1" 200 393
+"GET /media/Dymy%E5%89%AF%E6%9C%AC.mp4 HTTP/1.1" 200 2834432
+"GET /video/2/ HTTP/1.1" 302 0
+"GET /media/Dymy%E5%89%AF%E6%9C%AC.mp4 HTTP/1.1" 200 3940352
+"GET /video/1 HTTP/1.1" 301 0
+"GET /video/1/ HTTP/1.1" 302 0
+"GET /media/DymyNnagiasu01BIG51280X720.%E5%8D%9C%E5%8D%9C%E9%85%B1.mp4 HTTP/1.1" 200 2965504
+"GET /media/Dymy6.mp4 HTTP/1.1" 200 3334144
+"GET /media/Dymy.mp4 HTTP/1.1" 200 3956736
+"GET /video/2/ HTTP/1.1" 302 0
+"GET /media/Dymy%E5%89%AF%E6%9C%AC.mp4 HTTP/1.1" 200 3923968
+"GET /admin/SmallVideo/avideo/?all= HTTP/1.1" 200 7458
+"GET /admin/jsi18n/ HTTP/1.1" 200 3189
+"GET /video/2/ HTTP/1.1" 302 0
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2305
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2305
+"GET /media/Dymy%E5%89%AF%E6%9C%AC.mp4 HTTP/1.1" 200 186923533
+"GET /media/Dymy%E5%89%AF%E6%9C%AC.mp4 HTTP/1.1" 200 86687744
+Not Found: /VIDEO
+"GET /VIDEO HTTP/1.1" 404 2287
+"GET /video/ HTTP/1.1" 200 393
+"GET /media/Dymy_5.mp4 HTTP/1.1" 200 42901504
+"GET /video/1/ HTTP/1.1" 302 0
+"GET /media/DymyNnagiasu01BIG51280X720.%E5%8D%9C%E5%8D%9C%E9%85%B1.mp4 HTTP/1.1" 200 1155072
+"GET /media/DymyNnagiasu01BIG51280X720.%E5%8D%9C%E5%8D%9C%E9%85%B1.mp4 HTTP/1.1" 200 147456
+"GET /video/ HTTP/1.1" 200 393
+"GET /video/ HTTP/1.1" 200 393
+"GET /video/ HTTP/1.1" 200 393
+"GET /video/ HTTP/1.1" 200 393
+"GET /video/ HTTP/1.1" 200 393
+"GET /media/Dymy6.mp4 HTTP/1.1" 200 86761472
+"GET /media/Dymy%E5%89%AF%E6%9C%AC.mp4 HTTP/1.1" 200 123117568
+"GET /media/Dymy6.mp4 HTTP/1.1" 200 73515008
+"GET /media/Dymy6.mp4 HTTP/1.1" 200 34111488
+"GET /media/Dymy6.mp4 HTTP/1.1" 200 22093824
+"GET /media/Dymy%E5%89%AF%E6%9C%AC.mp4 HTTP/1.1" 200 34250752
+"GET /media/Dymy6.mp4 HTTP/1.1" 200 20324352
+"GET /media/Dymy%E5%89%AF%E6%9C%AC.mp4 HTTP/1.1" 200 16662528
